@@ -1,0 +1,9 @@
+# Core device stack (the Linux equivalent of Apple's MobileDevice framework)
+pymobiledevice3>=4.0
+
+# GUI (optional)
+PySide6>=6.5
+
+# Firmware parsing (optional, usually pulled in by pymobiledevice3)
+ipsw_parser>=1.1
+pyimg4>=0.7
