@@ -81,6 +81,16 @@ tuxutools-gui --mock     # explore the UI without a device
 
 Tabs: **Info · Files · Applications · Backup · Firmware · Jailbreak**.
 
+To add a launcher to your application menu:
+
+```bash
+bash packaging/install-desktop.sh
+```
+
+`packaging/tuxutools.desktop` is path-agnostic (`Exec=tuxutools-gui`, resolved
+via `$PATH`); the script resolves the real interpreter of your install and
+writes the absolute path into `~/.local/share/applications/tuxutools.desktop`.
+
 ## Architecture
 
 ```
